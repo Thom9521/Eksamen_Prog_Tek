@@ -1,0 +1,10 @@
+En firewall på dansk ville blive kaldt en brandmur.
+En firewall er et stykke software, som bestemmer og udvælger hvilke
+pakker der må komme igennem.
+
+Da vi har med følsomme data at gøre ville jeg bruge 
+Packet Filtering Firewalls. Disse firewalls holder øje med om
+alle kriterierne, så som ip-adresse, port-nummer, pakke-typer osv.
+er de helt rigtige. Hvis firewallen ser en pakke som usikker vil den 
+ikke blive taget med. På den måde er vores følsomme data så sikkert som
+muligt.

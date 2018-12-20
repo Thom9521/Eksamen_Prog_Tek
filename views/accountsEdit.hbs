@@ -1,0 +1,86 @@
+<h1>Justér kunde</h1>
+<table>
+    <form action="/accountsEdit/put" method="POST">
+
+        <td>
+            <label><b>Hvilken konti skal justeres?</b></label>
+        </td>
+        <tr>
+            <td>
+                <label>KID:</label>
+            </td>
+            <td>
+                <input type="number" name="cidPUT" required="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+                <label><b>Justeringer:</b></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Kontonummer:</label>
+            </td>
+            <td>
+                <input type="number" name="numberPUT" required="" >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Valuta:</label>
+            </td>
+            <td>
+                <input type="text" name="valutaPUT" required="" >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Saldo:</label>
+            </td>
+            <td>
+                <input type="number" name="balancePUT" required="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Coins</label>
+            </td>
+            <td>
+                <input type="text" name="coinsPUT" required="">
+            </td>
+        </tr>
+      
+
+</table>
+<br>
+<button type="submit" class="btn btn-dark">PUT</button>
+<br>
+
+</form>
+
+
+<!--Testing som ikke virker endnu. Ville have værdierne fra document ind som values-->
+<!--
+<table>
+    <form action="/costumersEdit/put/json" method="GET">
+        <td>
+            <label><b>Hvilken konti skal justeres?</b></label>
+        </td>
+        <tr>
+            <td>
+                <label>ID:</label>
+            </td>
+            <td>
+                <input type="number" name="uidBody" required="" id="input">
+            </td>
+            <td> <button type="submit" class="btn btn-dark">Find</button></td>
+            <td><button onclick="vaerdiSet()"></button></td>
+        </tr>
+        <tr></table>
+        <Tilføj tag som får værdien fra uidBody, og hent værdien i js-fil>
+            <p name="demo" id="demo">1</p>
+        </form>
+        -->
+    

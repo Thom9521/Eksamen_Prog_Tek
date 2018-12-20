@@ -1,0 +1,51 @@
+    <h1>Tilføj konti</h1>
+    
+    <form action="/accountsAdd/post" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label>KID:</label>
+                </td>
+                <td>
+                    <input type="number" name="cid" required="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Kontonummer:</label>
+                </td>
+                <td>
+                    <input type="number" name="number" required="" pattern="\d{8}" >
+                </td>
+            </tr>
+                <tr>
+                <td>
+                    <label>Valuta:</label>
+                </td>
+                <td>
+                    <input type="text" name="valuta" required="" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Saldo</label>
+                </td>
+                <td>
+                    <input type="number" name="balance" required="">
+                </td>
+                <td>
+                    <label></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Coins</label>
+                </td>
+                <td>
+                    <input type="text" name="coins" required="">
+                </td>
+            </tr>
+           
+
+        </table><button type="submit" id="tilføj">POST</button>
+    </form>

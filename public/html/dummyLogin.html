@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Thomas Christensen">
+    <!--Linker til bootstrap framework-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!--Linker til min egen ccs fil-->
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>Crypto Bank</h1>
+    <h6>Log ind for komme til banken:</h6>
+    <br>
+    <form name="login">
+        <b>Brugernavn:</b>
+        <br>
+        <input type="text" name="userid">
+        <br>
+        <br>
+        <b>Kodeord:</b>
+        <br>
+        <input type="password" name="password"><br><br>
+        <button type="button" class="btn btn-dark" onclick="check(this.form)">Login</button>
+    </form>
+
+    <p id="date"></p>
+    <script src="/javascripts/script.js"></script>
+
+</body>
+
+</html>

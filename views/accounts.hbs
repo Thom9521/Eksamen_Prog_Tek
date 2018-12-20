@@ -1,0 +1,44 @@
+<h1 class="h1">Konti</h1>
+
+<div class="list-group">
+    <a href="accountsAdd" class="list-group-item list-group-item-action list-group-item-dark">Tilføj konto</a>
+    <a href="accountsEdit" class="list-group-item list-group-item-action list-group-item-dark">Justér konto (husk
+        ID)</a>
+</div>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>Unikt ID</th>
+            <th>KID</th>
+            <th>Kontonummer</th>
+            <th>Valuta</th>
+            <th>Saldo</th>
+            <th>Coins</th>
+            <th>JSON</th>
+            <th>Fjern</th>
+        </tr>
+    </thead>
+    {{#each accounts}}
+    <tr>
+        <td>{{_id}}</td>
+        <td>{{cid}}</td>
+        <td>{{number}}</td>
+        <td>{{valuta}}</td>
+        <td>{{balance}}</td>
+        <td>{{coins}}</td>
+        <td>
+            <form action="/accounts/json/{{cid}}" method="GET">
+                <button id="jsonBtn">GET</button>
+            </form>
+        </td>
+        <td>
+            <form action="/accounts/delete/{{_id}}" method="POST">
+                <button id="deleteBtn">DELETE</button>
+            </form>
+        </td>
+
+    </tr>
+    {{/each}}
+
+</table>

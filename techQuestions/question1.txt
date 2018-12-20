@@ -1,0 +1,20 @@
+OSI-7-Lagsmodellen er en netværksprotokol, hvori der ligger 7 lag.
+Hvert lag gør kun brug af det underliggende lags funktioner, og
+tilbyder kun funktioner til laget over.
+
+Da der skal overføres konto- og kundeoplysninger ville jeg benytte mig
+af TCP(Transmission Control Protokol), eftersom det er den mest sikre protokol
+at overføre data på, hvor man vil sikre sig at alle pakker kommer med.
+TCP er connection orienteret og laver nemlig handshake. Mistes en pakke,
+så vil det blive opdaget og pakken vil blive sent igen.
+Imodsætning til TCP er der også UDP(User Datagram Protocol), men her bliver 
+der ikke holdt styr på om alle pakker bliver sent. Det kunne bl.a. bruges
+til video, lyd eller streaming hvor der bare skal sendes data hele tiden.
+Disse protokoler er beskrevet i transport-lager(4).
+
+Da vi skal have etablere en forbindelse til en server gennem en socket,
+har vi brug for at vide hvad portnummeret er og vi skal bruge en ip-adresse.
+Port nummeret er vigigt, så TCP kan identificere hvor dataen skal sendes hen,
+og et endpoint er en kombination af en ip-adresse og en port.
+Vi er nu i sessionlaget(5). Det er altså her forbindelsen mellem 2 enheder
+etableres.
