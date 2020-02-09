@@ -10,5 +10,5 @@ For at køre programmet skal du skrive følgende i consolen:
 
 Åben din browser og skriv "localhost:3000" i din url.
 
-### Hjenen bag:
+### Hjernen bag:
 - [Thomas Marcus Christensen](https://github.com/Thom9521).
